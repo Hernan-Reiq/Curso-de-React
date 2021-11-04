@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-// import Index from "./practica-1/index";
+import "./App.css";
+
+const Text = ({ children }) => {
+  return (
+    <h1 className="App-logo">{children}</h1>
+  )
+}
 
 class App extends Component {
-  render(){
-    return(
-      <h1>Hola</h1>
+  render() {
+    return (
+      <div className="App">
+        <Text>Hernan Demorizi Ureña</Text>
+      </div>
     )
   }
-} 
+}
 
 export default App;
