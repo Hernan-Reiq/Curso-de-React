@@ -1,41 +1,11 @@
-import './practica-2/css/main.css';
-import Button from "./practica-2/Reutilizar Componentes/button";
+import React, { Component } from "react";
+import Index from "./practica-3/index";
 
-const arr = [
-  'Hernan',
-  'Virgilio',
-  'Demorizi',
-  'Ureña',
-  'Hernan.Reiq'
-]
-
-const App = () => {
-  const AmorPorProgramar = true;
-  if (AmorPorProgramar) {
-    console.log('Amas programar');
-    return (
-      <div>
-        <h1 onClick={(e) => {
-          console.log(e)
-          if (e.altKey) {
-            console.log('Hiciste click presionando la tecla Alt')
-          }
-        }}>CRUD</h1>
-
-        {arr.map((el, i) => {
-          return(
-            <p key={i} className="display-3">{el}</p>
-          )
-        })}
-
-        <Button onClick={() => { console.log('CREATE') }}>CREATE</Button>
-        <Button onClick={() => { console.log('READ') }}>READ</Button>
-        <Button onClick={() => { console.log('UPDATE') }}>UPDATE</Button>
-        <Button onClick={() => { console.log('DELETE') }}>DELETE</Button>
-      </div>
+class App extends Component {
+  render() {
+    return(
+      <Index />
     )
-  } else {
-    console.log('No amas programar')
   }
 }
 
