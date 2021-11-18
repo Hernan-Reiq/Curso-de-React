@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Index from "./practica-3/index";
+import Index from "./practica-4/index";
 
 class App extends Component {
   render() {
